@@ -42,5 +42,5 @@ pub fn run() {
     string.truncate(2);
     println!("truncate(2) : {}", string);
 
-    println!("----------------------------------")
+    println!("----------------------------------");
 }

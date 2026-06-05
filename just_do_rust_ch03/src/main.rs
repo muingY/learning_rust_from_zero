@@ -8,6 +8,8 @@ mod study04_collection_02_hashmap;
 mod study04_collection_03_hashset;
 mod study05_str;
 mod study06_string;
+mod study07_iterator;
+mod study08_iterator_method;
 
 fn main() {
     let args: Vec<String> = env::args().collect(); //NOTE - 프로그램 실행 시 인자 받기
@@ -22,6 +24,8 @@ fn main() {
         println!(" 6 : 컬렉션 - 해시셋");
         println!(" 7 : 문자열 - &str");
         println!(" 8 : 문자열 - string");
+        println!(" 9 : 이터레이터");
+        println!(" 10 : 이터레이터 - 메서드");
         return;
     }
 
@@ -37,6 +41,8 @@ fn main() {
         6 => study04_collection_03_hashset::run(),
         7 => study05_str::run(),
         8 => study06_string::run(),
+        9 => study07_iterator::run(),
+        10 => study08_iterator_method::run(),
         _ => println!("Invalid example number. Please choose 1, 2, or 3."),
     }
 }

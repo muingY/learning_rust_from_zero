@@ -23,6 +23,11 @@ pub fn run() {
     let str2 = str1.clone();
     println!("str1              : {}", str1);
     println!("str2(cloned str1) : {}", str2);
+
+    let struct1 = StructC { a: 11 };
+    let struct2 = struct1.clone();
+    println!("struct1                 : {}", struct1.a);
+    println!("struct2(cloned struct1) : {}", struct2.a);
 }
 
 #[derive(Debug)]

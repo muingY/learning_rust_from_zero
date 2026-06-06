@@ -5,6 +5,8 @@ mod study02_struct;
 mod study03_enum;
 mod study04_option;
 mod study05_result;
+mod study06_trait;
+mod study07_generic;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -15,7 +17,9 @@ fn main() {
  2 - 구조체
  3 - 열거형(enum)
  4 - Option
- 5 - Result");
+ 5 - Result
+ 6 - trait
+ 7 - generic");
         return;
     }
 
@@ -33,6 +37,8 @@ fn main() {
         3 => study03_enum::run(),
         4 => study04_option::run(),
         5 => study05_result::run(),
+        6 => study06_trait::run(),
+        7 => study07_generic::run(),
         _ => println!("Error - Wrong number")
     }
 }

@@ -7,6 +7,7 @@ mod study04_option;
 mod study05_result;
 mod study06_trait;
 mod study07_generic;
+mod study08_smart_pointer;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -19,7 +20,8 @@ fn main() {
  4 - Option
  5 - Result
  6 - trait
- 7 - generic");
+ 7 - generic
+ 8 - smart pointer");
         return;
     }
 
@@ -39,6 +41,7 @@ fn main() {
         5 => study05_result::run(),
         6 => study06_trait::run(),
         7 => study07_generic::run(),
+        8 => study08_smart_pointer::run(),
         _ => println!("Error - Wrong number")
     }
 }
